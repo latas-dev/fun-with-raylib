@@ -63,7 +63,7 @@ int popBackList(List *list)
 {
     size_t newCount = list->count - 1;
 
-    if (newCount < 0)
+    if (newCount <= 0)
         return 0;
 
     int popped = list->vals[newCount];
